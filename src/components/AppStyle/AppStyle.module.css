@@ -1,0 +1,30 @@
+div {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+ 
+}
+ul{
+  display: flex;
+  gap: 40px;
+}
+
+button{
+  width: 140px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgb(143, 143, 240);
+  font-size: x-large;
+}
+button:hover{
+  background-color: aqua;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+li {
+  list-style: none;
+}
