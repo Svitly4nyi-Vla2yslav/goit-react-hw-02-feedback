@@ -5,25 +5,25 @@ import { Section } from "./Section/Section";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from "./Statistics/Statistics";
 import './AppStyle/AppStyle.module.css'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 export class App extends Component {
 
-  static defaultProps = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-    total: 0,
-    positivePercentage: 0
-  }
+  // static defaultProps = {
+  //   good: 0,
+  //   neutral: 0,
+  //   bad: 0,
+  //   total: 0,
+  //   positivePercentage: 0
+  // }
 
-  static propTypes = {
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    total: PropTypes.number.isRequired,
-    positivePercentage: PropTypes.number.isRequired
-  }
+  // static propTypes = {
+  //   good: PropTypes.number.isRequired,
+  //   neutral: PropTypes.number.isRequired,
+  //   bad: PropTypes.number.isRequired,
+  //   total: PropTypes.number.isRequired,
+  //   positivePercentage: PropTypes.number.isRequired
+  // }
 
   state = {
     good: 0,
@@ -67,7 +67,8 @@ export class App extends Component {
       >
         <Section title='Please leave feedback'>
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            // options={['good', 'neutral', 'bad']}
+            options={[...Object.keys(this.state)]}
             onLeaveFeedback={this.handleLeaveFeedback}
           />
         </Section>

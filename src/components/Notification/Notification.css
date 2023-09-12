@@ -1,0 +1,12 @@
+.Notification__text {
+    color:#555;
+    border-radius:10px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 10px 10px 36px;
+    margin:10px;
+    font-size: 40px;
+    font-weight:bold;
+    text-transform:uppercase;
+    background:#ffecec no-repeat 10px 50%;
+    border:1px solid #f5aca6;
+}
